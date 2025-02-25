@@ -4,7 +4,8 @@
 /*body*/
 body {
     margin: 0;
-
+    overflow-x: hidden;
+    
 }
 /* Edicion de primera seccion */
 .start{
