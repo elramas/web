@@ -845,7 +845,7 @@ ul {
     }
     .start, .inici, .secciones, .queoferim {
         background-image: none;
-        background-size: 50% auto; /* Aumenta el tamaño de la imagen en pantallas pequeñas */
+        background-size: 700px auto; /* Aumenta el tamaño de la imagen en pantallas pequeñas */
         padding-left: 5%; /* Ajusta el relleno de cada sección */
         padding-right: 5%;
         flex-direction: column; /* Cambia a columna para una mejor adaptación */
@@ -870,7 +870,7 @@ ul {
     .nav-list.active {
         display: flex; /* Mostrar menú cuando está activo */
     }
-    
+
     .cajas {
         flex-direction: column; /* Asegúrate de que las cajas se coloquen en columnas */
         gap: 5px; /* Reduce el espacio entre las cajas */
