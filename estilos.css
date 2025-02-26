@@ -840,6 +840,9 @@ ul {
     display: none;
 }
 @media only screen and (max-width: 700px) {
+    .body{
+        overflow-x: hidden;
+    }
     .start, .inici, .secciones, .queoferim {
         background-image: none;
         background-size: 50% auto; /* Aumenta el tamaño de la imagen en pantallas pequeñas */
