@@ -8,6 +8,7 @@ body {
     
 }
 /* Edicion de primera seccion */
+
 .start{
     background-image: url(imagenes/saludo-niña.png);
     background-size: 25% auto; /* Ancho del 25% y altura automática */
