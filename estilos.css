@@ -872,6 +872,7 @@ ul {
     .start, .inici, .secciones, .queoferim, .cajas, .footer {
         background-image: none;
         background-size: 100% auto; /* Cambiar el tamaño de las imágenes */
+        flex-direction: column; 
         padding-left: 5%; 
         padding-right: 5%; 
         width: 100%; /* Asegúrate de que las secciones ocupen el 100% del ancho */
@@ -886,7 +887,7 @@ ul {
         width: 100%; /* Asegurarse de que ocupe el 100% del ancho */
     }
 
-    .nav-list {
+    .nav-list.active{
         display: none; /* Ocultar menú por defecto */
         flex-direction: column; 
         width: 100%; 
@@ -897,7 +898,9 @@ ul {
         z-index: 1; 
         margin: 0; /* Asegúrate de que no haya márgenes en el menú */
     }
-
+    .nav-list li{
+        display: none;
+    }
     /* Estilo para mostrar el menú al hacer clic */
     .nav-list.active {
         display: flex; /* Mostrar el menú cuando esté activo */
@@ -911,10 +914,6 @@ ul {
         margin: 0; /* Eliminar márgenes */
     }
 
-    /* Ocultar elementos específicos en el footer */
-    .map-container, .container2 {
-        display: none; /* Ocultar estos elementos */
-    }
 
     /* Ajustar el footer */
     .footer {
@@ -922,4 +921,9 @@ ul {
         padding: 0; /* Eliminar padding en el footer */
         margin: 0; /* Eliminar márgenes en el footer */
     }
+        /* Ocultar elementos específicos en el footer */
+    .map-container, .container2 {
+        display: none; /* Ocultar estos elementos */
+    }
+
 }
