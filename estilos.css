@@ -879,6 +879,9 @@ ul {
         box-sizing: border-box; /* Incluir padding y borde en el ancho total */
         margin: 0; /* Eliminar márgenes */
     }
+    .secciones img{
+        display: none;
+    }
 
     .menu-toggle {
         display: flex; /* Mostrar el menú hamburguesa */
