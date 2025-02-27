@@ -860,13 +860,13 @@ ul {
 .form .close {
     display: none;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     .body{
         overflow-x: hidden;
     }
     .start, .inici, .secciones, .queoferim {
         background-image: none;
-        background-size: 700px auto; /* Aumenta el tamaño de la imagen en pantallas pequeñas */
+        background-size: 600px auto; /* Aumenta el tamaño de la imagen en pantallas pequeñas */
         padding-left: 5%; /* Ajusta el relleno de cada sección */
         padding-right: 5%;
         flex-direction: column; /* Cambia a columna para una mejor adaptación */
@@ -917,7 +917,8 @@ ul {
 
     /* Ajuste del tamaño de la fuente general */
     body {
-        font-size: 14px; /* Tamaño de fuente más pequeño para pantallas móviles */
+        font-size: 14px;
+        overflow: hidden; /* Tamaño de fuente más pequeño para pantallas móviles */
     }
 
     /* Otros estilos que necesiten ajustes */
