@@ -863,23 +863,27 @@ ul {
 /* Ajustes para pantallas pequeñas y evitar overflow */
 @media only screen and (max-width: 414px) {
     body {
-        overflow-x: hidden; /* Asegúrate de que no haya scroll horizontal */
+        overflow-x: hidden; /* Prevenir el scroll horizontal */
         width: 100%; /* Asegúrate de que el body ocupe el 100% */
+        margin: 0; /* Eliminar márgenes en el body */
+        padding: 0; /* Eliminar padding en el body */
     }
 
-    .start, .inici, .secciones, .queoferim, .cajas {
+    .start, .inici, .secciones, .queoferim, .cajas, .footer {
         background-image: none;
         background-size: 100% auto; /* Cambiar el tamaño de las imágenes */
         padding-left: 5%; 
         padding-right: 5%; 
         width: 100%; /* Asegúrate de que las secciones ocupen el 100% del ancho */
-        box-sizing: border-box; /* Incluir padding y border en el ancho total */
+        box-sizing: border-box; /* Incluir padding y borde en el ancho total */
+        margin: 0; /* Eliminar márgenes */
     }
 
     .menu-toggle {
         display: flex; /* Mostrar el menú hamburguesa */
         margin-right: 20px; 
-        cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
+        cursor: pointer; /* Cambiar el cursor al pasar sobre el icono */
+        width: 100%; /* Asegurarse de que ocupe el 100% del ancho */
     }
 
     .nav-list {
@@ -891,7 +895,7 @@ ul {
         left: 0; 
         background-color: #fccb38; 
         z-index: 1; 
-        margin: 0; /* Asegúrate de que no haya márgenes que causen problemas de espacio */
+        margin: 0; /* Asegúrate de que no haya márgenes en el menú */
     }
 
     /* Estilo para mostrar el menú al hacer clic */
@@ -904,10 +908,18 @@ ul {
         display: flex;
         flex-direction: column; /* Asegurarse de que se ubiquen en columnas */
         width: 100%; /* Asegúrate de que las cajas ocupen el 100% del ancho */
+        margin: 0; /* Eliminar márgenes */
     }
 
     /* Ocultar elementos específicos en el footer */
     .map-container, .container2 {
         display: none; /* Ocultar estos elementos */
+    }
+
+    /* Ajustar el footer */
+    .footer {
+        width: 100%; /* Asegurar que el footer ocupe el 100% del ancho */
+        padding: 0; /* Eliminar padding en el footer */
+        margin: 0; /* Eliminar márgenes en el footer */
     }
 }
