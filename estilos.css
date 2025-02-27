@@ -872,7 +872,6 @@ ul {
         background-size: 100% auto; /* Cambiar el tamaño de las imágenes */
         padding-left: 5%; 
         padding-right: 5%; 
-        flex-direction: column; 
         width: 100%; /* Asegúrate de que las secciones ocupen el 100% del ancho */
         box-sizing: border-box; /* Incluir padding y border en el ancho total */
     }
@@ -903,12 +902,12 @@ ul {
     /* Ajuste para las cajas dentro de la sección queoferim */
     .queoferim .cajas {
         display: flex;
-        flex-wrap: wrap; /* Permitir que haya varias filas */
         flex-direction: column; /* Asegurarse de que se ubiquen en columnas */
+        width: 100%; /* Asegúrate de que las cajas ocupen el 100% del ancho */
     }
 
     /* Ocultar elementos específicos en el footer */
-    #map-container, #container2 {
+    .map-container, .container2 {
         display: none; /* Ocultar estos elementos */
     }
 }
