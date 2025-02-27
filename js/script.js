@@ -1,4 +1,3 @@
-<script>
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.getElementById('mobile-menu'); // Seleccionar por ID
     const navList = document.querySelector('.nav-list');
@@ -7,4 +6,3 @@ document.addEventListener('DOMContentLoaded', function() {
         navList.classList.toggle('active'); // Alternar la clase para mostrar/ocultar
     });
 });
-</script>

@@ -867,7 +867,7 @@ ul {
         width: 100%; /* Asegúrate de que el body ocupe el 100% */
     }
 
-    .start, .inici, .secciones, .queoferim {
+    .start, .inici, .secciones, .queoferim, .cajas{
         background-image: none;
         background-size: 100% auto; /* Cambiar el tamaño de las imágenes */
         padding-left: 5%; 
