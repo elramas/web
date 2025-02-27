@@ -1,5 +1,6 @@
 /* Estilos generales */
 /* Prueba 222222 555555*/
+
 body {
     background-color: #6fc2fd;
     font-family: 'Arial', sans-serif;
@@ -150,11 +151,16 @@ body {
 
 .texto {
     width: 60%;
+    font-family: "Sigmar", serif;
+    color: #000000;
+    text-align: left;
 }
 
 .texto h2 {
     font-size: 1.8em;
     margin-bottom: 10px;
+    color: #488fe0;
+    text-align: center;
 }
 
 .texto p {
@@ -188,7 +194,21 @@ body {
 
 .texto2 {
     width: 60%;
-    
+    font-family: "Sigmar", serif;
+
+}
+.texto2 {
+    width: 65%;
+    font-family: "Sigmar", serif;
+    color: #000000;
+    text-align: left;
+}
+
+.texto2 h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #e048ab;
+    text-align: center;
 }
 
 .imagen2 {
@@ -353,8 +373,21 @@ body {
 }
 
 .texto3 {
-    width: 60%;
+    width: 67%;
+    font-family: "Sigmar", serif;
 }
+    .texto3 {
+      
+        font-family: "Sigmar", serif;
+        color: #000000;
+        text-align: left;
+    }
+    
+    .texto3 h2 {
+        color: #33c96c;
+        text-align: center;
+    }
+
 
 .imagen3 {
     width: 30%;
@@ -417,11 +450,17 @@ body {
 }
 
 .texto4 {
-    width: 60%;
+    width: 67%;
     font-family: "Barrio", serif;
+    text-align: left;
   
       
 }
+.texto4 h2 {
+    
+    text-align: center;
+}
+
 
 .imagen4 {
     width: 30%;
