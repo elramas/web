@@ -379,6 +379,16 @@ span{
     font-weight: bold;
     font-family: "Pacifico", serif ;
 }
+
+/*Edicion img flech1*/
+.t2 img{
+    display: flex;
+    justify-content: right;
+    width: auto;
+    height: 50px;
+    padding-left: 100px;
+}
+
 /*Edicion cards*/
 .carts{
     display: flex;
@@ -433,6 +443,16 @@ span{
     font-weight: bold;
     font-family: "Pacifico", serif ;
 }
+/*Conf imagen de inici */
+.prt1 img{
+    display: flex;
+    justify-content: right;
+    width: auto;
+    height: 50px;
+    padding-left: 100px;
+
+}
+
 
 /* Conf de las box's */
 
