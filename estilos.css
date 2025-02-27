@@ -860,66 +860,42 @@ ul {
 .form .close {
     display: none;
 }
-@media only screen and (max-width: 600px) {
-    .body{
-        overflow-x: hidden;
+/* Ajustes para pantallas pequeñas y evitar overflow */
+@media only screen and (max-width: 700px) {
+    body {
+        overflow-x: hidden; /* Asegúrate de que no haya scroll horizontal */
+        width: 100%; /* Asegúrate de que el body ocupe el 100% */
     }
+
     .start, .inici, .secciones, .queoferim {
         background-image: none;
-        background-size: 600px auto; /* Aumenta el tamaño de la imagen en pantallas pequeñas */
-        padding-left: 5%; /* Ajusta el relleno de cada sección */
-        padding-right: 5%;
-        flex-direction: column; /* Cambia a columna para una mejor adaptación */
+        background-size: 100% auto; /* Cambiar el tamaño de las imágenes */
+        padding-left: 5%; 
+        padding-right: 5%; 
+        flex-direction: column; 
+        width: 100%; /* Asegúrate de que las secciones ocupen el 100% del ancho */
+        box-sizing: border-box; /* Incluir padding y border en el ancho total */
     }
 
     .menu-toggle {
-        display: flex; /* Mostrar menú hamburguesa en pantallas pequeñas */
-        margin-right: 20px; /* Margen a la derecha para separación */
+        display: flex; /* Mostrar el menú hamburguesa */
+        margin-right: 20px; 
+        cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
     }
 
     .nav-list {
         display: none; /* Ocultar menú por defecto */
-        flex-direction: column; /* Pila verticalmente cuando está visible */
-        width: 100%;
-        position: absolute; /* Colocar fuera del flujo normal */
-        top: 50px; /* Ajustable según la altura del encabezado */
-        left: 0;
-        background-color: #fccb38; /* Color de fondo */
-        z-index: 1; /* Asegúrate de que esté por encima */
+        flex-direction: column; 
+        width: 100%; 
+        position: absolute; 
+        top: 50px; 
+        left: 0; 
+        background-color: #fccb38; 
+        z-index: 1; 
     }
 
+    /* Estilo para mostrar el menú al hacer clic */
     .nav-list.active {
-        display: flex; /* Mostrar menú cuando está activo */
+        display: flex; /* Mostrar el menú cuando esté activo */
     }
-
-    .cajas {
-        flex-direction: column; /* Asegúrate de que las cajas se coloquen en columnas */
-        gap: 5px; /* Reduce el espacio entre las cajas */
-    }
-
-    .carts {
-        display: flex; /* Cambia a flex para la versión general */
-        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
-    }
-
-    .box {
-        display: flex; /* Cambia a flex para la versión general */
-        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
-    }
-
-    .contact-info {
-        font-size: 14px; /* Reduce el tamaño de la fuente para legibilidad en pantallas pequeñas */
-    }
-
-    .inf {
-        font-size: 24px; /* Asegúrate de que el texto no sobrecargue el espacio */
-    }
-
-    /* Ajuste del tamaño de la fuente general */
-    body {
-        font-size: 14px;
-        overflow: hidden; /* Tamaño de fuente más pequeño para pantallas móviles */
-    }
-
-    /* Otros estilos que necesiten ajustes */
 }

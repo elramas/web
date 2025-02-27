@@ -1,8 +1,10 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const mobileMenu = document.getElementById("mobile-menu");
-    const navList = document.getElementById("nav-list");
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('mobile-menu'); // Seleccionar por ID
+    const navList = document.querySelector('.nav-list');
 
-    mobileMenu.addEventListener("click", function() {
-        navList.classList.toggle("active"); // Alterna la clase activa
+    menuToggle.addEventListener('click', function() {
+        navList.classList.toggle('active'); // Alternar la clase para mostrar/ocultar
     });
 });
+</script>
