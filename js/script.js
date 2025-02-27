@@ -15,3 +15,4 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log("Menú clicado. Estado actual de 'active':", navList.classList.contains('active'));
     });
 });
+
