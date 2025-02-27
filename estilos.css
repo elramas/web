@@ -861,13 +861,13 @@ ul {
     display: none;
 }
 /* Ajustes para pantallas pequeñas y evitar overflow */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 414px) {
     body {
         overflow-x: hidden; /* Asegúrate de que no haya scroll horizontal */
         width: 100%; /* Asegúrate de que el body ocupe el 100% */
     }
 
-    .start, .inici, .secciones, .queoferim, .cajas{
+    .start, .inici, .secciones, .queoferim, .cajas {
         background-image: none;
         background-size: 100% auto; /* Cambiar el tamaño de las imágenes */
         padding-left: 5%; 
@@ -888,14 +888,27 @@ ul {
         flex-direction: column; 
         width: 100%; 
         position: absolute; 
-        top: 50px; 
+        top: 50px; /* Ajusta este valor si es necesario */
         left: 0; 
         background-color: #fccb38; 
         z-index: 1; 
+        margin: 0; /* Asegúrate de que no haya márgenes que causen problemas de espacio */
     }
 
     /* Estilo para mostrar el menú al hacer clic */
     .nav-list.active {
         display: flex; /* Mostrar el menú cuando esté activo */
+    }
+
+    /* Ajuste para las cajas dentro de la sección queoferim */
+    .queoferim .cajas {
+        display: flex;
+        flex-wrap: wrap; /* Permitir que haya varias filas */
+        flex-direction: column; /* Asegurarse de que se ubiquen en columnas */
+    }
+
+    /* Ocultar elementos específicos en el footer */
+    #map-container, #container2 {
+        display: none; /* Ocultar estos elementos */
     }
 }
