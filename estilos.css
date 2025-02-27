@@ -879,6 +879,12 @@ ul {
         box-sizing: border-box; /* Incluir padding y borde en el ancho total */
         margin: 0; /* Eliminar márgenes */
     }
+    .start{
+        padding-top: 15%;
+    }
+    .start img{
+        display: none;
+    }
     .secciones img{
         display: none;
     }
@@ -895,7 +901,7 @@ ul {
     }
 
     .nav-list.active{
-        display: none; /* Ocultar menú por defecto */
+        display: flex; /* Ocultar menú por defecto */
         flex-direction: column; 
         width: 100%; 
         position: absolute; 
