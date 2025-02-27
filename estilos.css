@@ -21,7 +21,6 @@ body {
     align-items: center;
     position:relative;
     /*top: -150px;  Comienza fuera de la pantalla */
-    border-radius: 8px; /* Bordes redondeados */
     text-align:center;
     transition: top 1s ease; /* Transición suave */
     width: 100%;
@@ -33,6 +32,7 @@ body {
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: left center;
     background-position-y: 140px;
+    border-radius: 8px; /* Bordes redondeados */
 
 }
 
@@ -882,6 +882,10 @@ ul {
     .secciones img{
         display: none;
     }
+    .t2{
+        margin-top: 15%;
+        text-align: center;
+    }
 
     .menu-toggle {
         display: flex; /* Mostrar el menú hamburguesa */
@@ -910,8 +914,26 @@ ul {
     }
 
     /* Ajuste para las cajas dentro de la sección queoferim */
-    .queoferim .cajas {
+    .queoferim{
+        background-image: none;
+    }
+    .queoferim img {
         display: none;
+    }
+    .cajas{
+        display: flex;
+        flex-direction: column;
+    }
+    .box1{
+        width: auto;
+        height: auto;
+    }
+    .box2{
+        height: auto;
+    }
+    .box3{
+        width: auto;
+        height: auto;
     }
 
 
@@ -920,10 +942,18 @@ ul {
         width: 100%; /* Asegurar que el footer ocupe el 100% del ancho */
         padding: 0; /* Eliminar padding en el footer */
         margin: 0; /* Eliminar márgenes en el footer */
+        overflow-x: hidden;
     }
-        /* Ocultar elementos específicos en el footer */
-    .map-container, .container2 {
-        display: none; /* Ocultar estos elementos */
+    .contact-info{
+        padding-right: 5%;
     }
-
+    .example-2{
+        padding-right: 12%;
+    }
+    .map-container{
+        display: none;
+    }
+    .container2{
+        display: none;
+    }
 }
