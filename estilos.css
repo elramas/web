@@ -903,13 +903,12 @@ ul {
     .nav-list.active{
         display: flex; /* Ocultar menú por defecto */
         flex-direction: column; 
+        align-items: center;
         width: 100%; 
         position: absolute; 
         top: 50px; /* Ajusta este valor si es necesario */
         left: 0; 
-        background-color: #fccb38; 
-        z-index: 1; 
-        margin: 0; /* Asegúrate de que no haya márgenes en el menú */
+        background-color: white; 
     }
     .nav-list li{
         display: none;
