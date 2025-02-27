@@ -869,7 +869,7 @@ ul {
         padding: 0; /* Eliminar padding en el body */
     }
 
-    .start, .inici, .secciones, .queoferim, .cajas, .footer {
+    .start, .inici, .secciones{
         background-image: none;
         background-size: 100% auto; /* Cambiar el tamaño de las imágenes */
         flex-direction: column; 
@@ -908,10 +908,7 @@ ul {
 
     /* Ajuste para las cajas dentro de la sección queoferim */
     .queoferim .cajas {
-        display: flex;
-        flex-direction: column; /* Asegurarse de que se ubiquen en columnas */
-        width: 100%; /* Asegúrate de que las cajas ocupen el 100% del ancho */
-        margin: 0; /* Eliminar márgenes */
+        display: none;
     }
 
 
