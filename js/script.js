@@ -1,8 +1,18 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const mobileMenu = document.getElementById("mobile-menu");
-    const navList = document.getElementById("nav-list");
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('mobile-menu');
+    const navList = document.querySelector('.nav-list');
 
-    mobileMenu.addEventListener("click", function() {
-        navList.classList.toggle("active"); // Alterna la clase activa
+    if (!menuToggle) {
+        console.error("El elemento 'mobile-menu' no se encontró.");
+    }
+
+    if (!navList) {
+        console.error("El elemento 'nav-list' no se encontró.");
+    }
+
+    menuToggle.addEventListener('click', function() {
+        navList.classList.toggle('active');
+        console.log("Menú clicado. Estado actual de 'active':", navList.classList.contains('active'));
     });
 });
+

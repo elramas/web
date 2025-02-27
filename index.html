@@ -21,16 +21,14 @@
                     <nav>
                         <!-- Botón del menú hamburguesa, que estará alineado al centro -->
                         <div class="menu-toggle" id="mobile-menu">
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                            <div class="bar"></div>
+                            <a href="web-act.html">Tallers</a>
                         </div>
                         <!-- Lista de navegación -->
                         <ul class="nav-list" id="nav-list">
                             <li><a href="index.html">Inici</a></li>
                             <li><a href="#secciones">Sobre nosaltres</a></li>
                             <li><a href="#queoferim">Que oferim?</a></li>
-                            <li><a href="web-act.html">Activitats</a></li>
+                            <li><a href="web-act.html">Tallers</a></li>
                             <li><a href="#final">Contactes</a></li>
                         </ul>
                     </nav>
@@ -117,9 +115,17 @@
             </div>
         </div>
         <!-- Div pie de pagina -->
-        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const menuToggle = document.getElementById('mobile-menu'); // Seleccionar por ID
+                const navList = document.querySelector('.nav-list');
+    
+                menuToggle.addEventListener('click', function() {
+                    navList.classList.toggle('active'); // Alternar la clase para mostrar/ocultar
+                });
+            });
+        </script>
     </body>
-    <script src="script.js"></script>
     <section class="spikes"></section>
     <footer>
         <div class="final" id="final">
@@ -133,6 +139,10 @@
                     <h1 class="inf"> Contactes </h1>
                     <p><strong>Dirección:</strong> Carrer del Doctor Almera, 33, 08205 Sabadell, Barcelona</p>
                     <p><strong>Teléfono:</strong> 937 25 90 99</p>
+                    <p><strong> Correus:</strong></p>
+                    <p> <strong> → </strong> manelra@jviladoms.cat</p>
+                    <p> <strong> → </strong>elpeva@jviladoms.cat</p>
+                    <p> <strong> → </strong>adarsa@jviladoms.cat</p>
                     <!-- iconos web --> 
                     <ul class="example-2">
                     <li class="icon-content">
