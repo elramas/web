@@ -24,8 +24,8 @@ body {
     border-radius: 8px; /* Bordes redondeados */
     text-align:center;
     transition: top 1s ease; /* Transición suave */
-    width: 100%;
-    height: 100%;
+    width: 100vh;
+    height: 100vh;
 }
 .inici{
     background-image: url(imagenes/saludo.png);
@@ -151,7 +151,7 @@ span{
 .wave {
     position: absolute;
     height: 137px;
-    width: 100%;
+    width: 100vh;
     background: #fccb38;
     bottom: 0;
 }
@@ -416,7 +416,7 @@ span{
     border-top-right-radius: 50% 100%;
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 100vh;
     background: #bddde6;
     height: 20%;
 }
@@ -429,8 +429,8 @@ span{
     background-position: left center;
     background-position-y: 155px; 
     background-color: #bddde6;
-    width: 100%;
-    height: 100%;
+    width: 100vh;
+    height: 100vh;
 }
 /* titulo */
 
@@ -604,7 +604,7 @@ footer {
     border-top: 2px solid #2c3e50;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
-    
+    width: 100vh;
 }
 .final{
     margin-top: 5%;
