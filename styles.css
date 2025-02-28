@@ -1,38 +1,87 @@
-/* Estilos generales */
-/* Prueba 222222 555555*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Patrick+Hand&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    background-color: #6fc2fd;
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color:#85cef0; /* Fondo claro pastel */
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100%;
     width: 100%; /* Asegura que el contenido esté centrado verticalmente */
+    overflow-x:hidden;
+}
+
+/* DIV web cabeza*/
+.cabeza{
+    background-color: #a7d1d9;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5%;
+
+}
+/* ESTILOS DE TIUTLO*/
+.top{
+    font-size: 25px; /* Tamaño de la fuente*/
+    font-weight: bold;
+    font-family:"Pacifico", serif ;
     text-align: center;
-    flex-direction: column;
+    padding-bottom: 10px;
 
 }
 
-h1 {
-    color: #fbfbfb; /* Color rosado pastel para el título */
-    font-size: 3em;
-    margin-bottom: 20px;
-    background-color: #9cd6ff;
+/*Estilos de nav*/
+.start-list{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: top;
+    text-transform: uppercase;
+    font-family: "Patrick Hand", serif;
+
 }
+
+.start-list ul{
+    display: flex;
+    flex-direction:row;
+    list-style: none;
+    justify-content: right;
+    gap: 55px;
+    font-family: "Patrick Hand", serif;
+    font-size: larger;
+    font-weight: bold;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.start-list ul li:hover{
+    background-color: #93cdd8;
+    box-shadow: black;
+    border-radius: 15%;
+    transform: scale(1.1);
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+    font-weight: bold;
+}
+nav {
+    display: flex;
+    align-items: center;
+    position: relative; /* Necesario para posicionar la lista de navegación */
+}
+
+
 
 /* Contenedor para las cajas */
 .container {
+
     display: flex; /* Usamos flexbox para que las cajas estén en una sola fila */
+    flex-direction: row;
     justify-content: center; /* Centra las cajas horizontalmente */
     gap: 20px; /* Espacio entre las cajas */
     flex-wrap: nowrap; /* Evita que las cajas se envuelvan a una nueva línea */
     margin-top: 50px;
     width: 100%;
     height: 100%;
+    font-family: "Patrick Hand", serif;
+
 }
 
 /* Estilos de cada caja */
@@ -67,6 +116,7 @@ h1 {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco translúcido para el texto */
     border-radius: 8px;
+    height: auto;
     a {
     position: relative;
     display: inline-block;
@@ -79,26 +129,27 @@ h1 {
     font-size: 20px;
 }
 
+
 a::before {
-  content: '';
-  position: absolute;
-  top: 6px;
-  left: -2px;
-  width: calc(100% + 4px);
-  height: calc(100% - 12px);
-  background-color: #212121;
-  transition: 0.3s ease-in-out;
-  transform: scaleY(1);
+content: '';
+position: absolute;
+top: 6px;
+left: -2px;
+width: calc(100% + 4px);
+height: calc(100% - 12px);
+background-color: #212121;
+transition: 0.3s ease-in-out;
+transform: scaleY(1);
 }
 
 a:hover::before {
-  transform: scaleY(0);
+transform: scaleY(0);
 }
 
 a::after {
-  content: '';
-  position: absolute;
-  left: 6px;
+content: '';
+position: absolute;
+left: 6px;
   top: -2px;
   height: calc(100% + 4px);
   width: calc(100% - 12px);
@@ -147,6 +198,29 @@ body {
     background-color: #9fddfc;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Patrick Hand", serif;
+
+}
+.p-section{
+    font-family: "Patrick Hand", serif;
+    font-size: larger;
+    padding-left: 5%;
+
+}
+.h-section{
+    font-family: "Patrick Hand", serif;
+    font-size: larger;
+    font-weight: bold;
+
+}
+.seccion ul{
+    list-style: none;
+    font-family: "Patrick Hand", serif;
+    padding-left: 5%;
+
+}
+.list2{
+    padding-left:10% ;
 }
 
 .texto {
