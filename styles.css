@@ -15,7 +15,6 @@ body {
     width: 100%;
     height: auto;
     padding-bottom: 5%;
-
 }
 /* ESTILOS DE TIUTLO*/
 .top{
@@ -27,6 +26,9 @@ body {
 
 }
 
+h2{
+    text-align: center;
+}
 /*Estilos de nav*/
 .start-list{
     display: flex;
@@ -71,7 +73,6 @@ nav {
 
 /* Contenedor para las cajas */
 .container {
-
     display: flex; /* Usamos flexbox para que las cajas estén en una sola fila */
     flex-direction: row;
     justify-content: center; /* Centra las cajas horizontalmente */
@@ -86,9 +87,45 @@ nav {
 
 /* Estilos de cada caja */
 .box {
-    background-color: #ffff7f; /* Color pastel suave para el fondo de la caja */
+    background-color: #9fddfc; /* Color pastel suave para el fondo de la caja */
     width: 250px; /* Ancho fijo */
-    height: 400px; /* Altura fija */
+    height: auto; /* Altura fija */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.box1 {
+    background-color: #fc9fe0; /* Color pastel suave para el fondo de la caja */
+    width: 250px; /* Ancho fijo */
+    height: auto; /* Altura fija */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.box2 {
+    background-color: #9ffcd1; /* Color pastel suave para el fondo de la caja */
+    width: 250px; /* Ancho fijo */
+    height: auto; /* Altura fija */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.box3 {
+    background-color: #d78fed; /* Color pastel suave para el fondo de la caja */
+    width: 250px; /* Ancho fijo */
+    height: auto; /* Altura fija */
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
     display: flex;
@@ -99,8 +136,27 @@ nav {
     overflow: hidden;
 }
 
+
 /* Estilos para las imágenes dentro de cada caja */
 .box img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Asegura que la imagen cubra bien el área sin distorsionarse */
+    border-radius: 10px;
+}
+.box1 img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Asegura que la imagen cubra bien el área sin distorsionarse */
+    border-radius: 10px;
+}
+.box2 img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Asegura que la imagen cubra bien el área sin distorsionarse */
+    border-radius: 10px;
+}
+.box3 img {
     width: 100%;
     height: 150px;
     object-fit: cover; /* Asegura que la imagen cubra bien el área sin distorsionarse */
@@ -112,11 +168,12 @@ nav {
     font-size: 1em;
     color: #6c6c69; /* Color pastel rosado para el texto */
     margin-top: 10px;
-    text-align: center;
+    text-align: left;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco translúcido para el texto */
     border-radius: 8px;
     height: auto;
+    margin-bottom: 10px;
     a {
     position: relative;
     display: inline-block;
@@ -169,6 +226,81 @@ a span {
 }
 
 button {
+    padding-top: 5px;
+  background-color: none;
+  text-decoration: none;
+  background-color: #fff530;
+  border: none;
+}
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box1 p {
+    font-size: 1em;
+    color: #6c6c69; /* Color pastel rosado para el texto */
+    margin-top: 10px;
+    text-align: left;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco translúcido para el texto */
+    border-radius: 8px;
+    height: auto;
+    margin-bottom: 10px;
+    a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #fefefe;
+    text-transform: uppercase;
+    color: #fefefe;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+a::before {
+content: '';
+position: absolute;
+top: 6px;
+left: -2px;
+width: calc(100% + 4px);
+height: calc(100% - 12px);
+background-color: #212121;
+transition: 0.3s ease-in-out;
+transform: scaleY(1);
+}
+
+a:hover::before {
+transform: scaleY(0);
+}
+
+a::after {
+content: '';
+position: absolute;
+left: 6px;
+  top: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% - 12px);
+  background-color: #212121;
+  transition: 0.3s ease-in-out;
+  transform: scaleX(1);
+  transition-delay: 0.5s;
+}
+
+a:hover::after {
+  transform: scaleX(0);
+}
+
+a span {
+  position: relative;
+  z-index: 3;
+}
+
+button {
+    padding-top: 5px;
   background-color: none;
   text-decoration: none;
   background-color: #fff530;
@@ -181,12 +313,157 @@ button {
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    line-height: 1.6;
+.box2 p {
+    font-size: 1em;
+    color: #6c6c69; /* Color pastel rosado para el texto */
+    margin-top: 10px;
+    text-align: left;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco translúcido para el texto */
+    border-radius: 8px;
+    height: auto;
+    margin-bottom: 10px;
+    a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #fefefe;
+    text-transform: uppercase;
+    color: #fefefe;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
 }
+
+
+a::before {
+content: '';
+position: absolute;
+top: 6px;
+left: -2px;
+width: calc(100% + 4px);
+height: calc(100% - 12px);
+background-color: #212121;
+transition: 0.3s ease-in-out;
+transform: scaleY(1);
+}
+
+a:hover::before {
+transform: scaleY(0);
+}
+
+a::after {
+content: '';
+position: absolute;
+left: 6px;
+  top: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% - 12px);
+  background-color: #212121;
+  transition: 0.3s ease-in-out;
+  transform: scaleX(1);
+  transition-delay: 0.5s;
+}
+
+a:hover::after {
+  transform: scaleX(0);
+}
+
+a span {
+  position: relative;
+  z-index: 3;
+}
+
+button {
+    padding-top: 5px;
+  background-color: none;
+  text-decoration: none;
+  background-color: #fff530;
+  border: none;
+}
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box3 p {
+    font-size: 1em;
+    color: #6c6c69; /* Color pastel rosado para el texto */
+    margin-top: 10px;
+    text-align: left;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco translúcido para el texto */
+    border-radius: 8px;
+    height: auto;
+    margin-bottom: 10px;
+    a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #fefefe;
+    text-transform: uppercase;
+    color: #fefefe;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+a::before {
+content: '';
+position: absolute;
+top: 6px;
+left: -2px;
+width: calc(100% + 4px);
+height: calc(100% - 12px);
+background-color: #212121;
+transition: 0.3s ease-in-out;
+transform: scaleY(1);
+}
+
+a:hover::before {
+transform: scaleY(0);
+}
+
+a::after {
+content: '';
+position: absolute;
+left: 6px;
+  top: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% - 12px);
+  background-color: #212121;
+  transition: 0.3s ease-in-out;
+  transform: scaleX(1);
+  transition-delay: 0.5s;
+}
+
+a:hover::after {
+  transform: scaleX(0);
+}
+
+a span {
+  position: relative;
+  z-index: 3;
+}
+
+button {
+    padding-top: 5%;
+  background-color: none;
+  text-decoration: none;
+  background-color: #fff530;
+  border: none;
+}
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 
 .seccion {
     display: flex;
@@ -199,7 +476,6 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-family: "Patrick Hand", serif;
-
 }
 .p-section{
     font-family: "Patrick Hand", serif;
@@ -220,7 +496,9 @@ body {
 
 }
 .list2{
-    padding-left:10% ;
+    padding-left:5% ;
+    font-family: "Patrick Hand", serif;
+
 }
 
 .texto {
@@ -261,10 +539,12 @@ body {
     padding: 20px;
     margin: 20px auto;
     width: 80%;
+    height: auto;
     background-color: #fc9fe0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 .texto2 {
     width: 60%;
@@ -284,6 +564,15 @@ body {
     color: #e048ab;
     text-align: center;
 }
+.p-section2{
+    font-family: "Patrick Hand", serif;
+    font-size: larger;
+    padding-left: 5%;
+    margin-bottom: 5px;
+
+}
+
+
 
 .imagen2 {
     width: 30%;
@@ -300,26 +589,28 @@ body {
 .box:hover {
     transform: scale(1.05); /* Agranda la caja ligeramente cuando el usuario pasa el cursor */
 }
-/* Galería de imágenes */
+/* Galería de imágenes 1 */
 .gallery {
     margin-top: 50px;
     padding: 40px;
-    background-color: #f9f9f9;
     text-align: center;
+    border-radius: 10%;
 }
 
-.gallery h2 {
-    font-size: 2.5em;
-    color: #7fd9ff;
-    margin-bottom: 20px;
+.hg1-section{
+    font-family: "Patrick Hand", serif;
+    font-size: 55px;
+    font-weight: bold;
+    
 }
-
 /* Contenedor de la galería */
 .gallery-container {
     display: grid; /* Usamos grid para las imágenes */
     grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
     gap: 20px; /* Espacio entre las imágenes */
     justify-items: center; /* Centra las imágenes dentro de cada celda */
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 /* Estilos para cada imagen dentro de la galería */
@@ -389,8 +680,8 @@ body {
 .gallery2 {
     margin-top: 50px;
     padding: 40px;
-    background-color: #f9f9f9;
     text-align: center;
+    border-radius: 10%;
 }
 
 .gallery2 h2 {
@@ -405,6 +696,8 @@ body {
     grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
     gap: 20px; /* Espacio entre las imágenes */
     justify-items: center; /* Centra las imágenes dentro de cada celda */
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 /* Estilos para cada imagen dentro de la galería */
@@ -438,33 +731,50 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
     margin: 20px auto;
     width: 80%;
+    height: 100%;
     background-color: #9ffcd1;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .texto3 {
-    width: 67%;
+    width: 60%;
     font-family: "Sigmar", serif;
-}
-    .texto3 {
-      
-        font-family: "Sigmar", serif;
-        color: #000000;
-        text-align: left;
-    }
-    
-    .texto3 h2 {
-        color: #33c96c;
-        text-align: center;
-    }
 
+}
+.texto3 {
+    width: 65%;
+    font-family: "Sigmar", serif;
+    color: #000000;
+    text-align: left;
+}
+
+.texto3 h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #31e893;
+    text-align: center;
+}
+
+.h-section3{
+    font-family: "Patrick Hand", serif;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+}
+.p-section3{
+    font-family: "Patrick Hand", serif;
+    font-size: medium;
+    padding-bottom: 5px;
+    padding-left: 5%;
+}
 
 .imagen3 {
     width: 30%;
+    padding: 10px;
+
 }
 
 .imagen3 img {
@@ -473,6 +783,15 @@ body {
     border-radius: 50%; /* Esto hace que la imagen sea redonda */
     border: 5px solid #1cf690; /* Borde opcional alrededor de la imagen */
 }
+.hg2-section{
+    font-family: "Patrick Hand", serif;
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
 /* Galería de imágenes */
 .gallery-item3 {
     margin-top: 50px;
@@ -493,6 +812,7 @@ body {
     grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
     gap: 20px; /* Espacio entre las imágenes */
     justify-items: center; /* Centra las imágenes dentro de cada celda */
+    ;
 }
 
 /* Estilos para cada imagen dentro de la galería */
@@ -524,31 +844,100 @@ body {
 }
 
 .texto4 {
-    width: 67%;
-    font-family: "Barrio", serif;
-    text-align: left;
-  
-      
+    width: 60%;
+    font-family: "Sigmar", serif;
+
 }
+.texto4 {
+    width: 65%;
+    font-family: "Sigmar", serif;
+    color: #000000;
+    text-align: left;
+}
+
 .texto4 h2 {
-    
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #c22af0;
     text-align: center;
 }
 
+.h-section4{
+    font-family: "Patrick Hand", serif;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+}
+.p-section4{
+    font-family: "Patrick Hand", serif;
+    font-size: medium;
+    padding-bottom: 15px;
+    padding-left: 5%;
+}
 
 .imagen4 {
     width: 30%;
 }
 
 .imagen4 img {
-    width: 100%;
+    width: 60%;
     height: auto;
+
     border-radius: 50%; /* Esto hace que la imagen sea redonda */
     border: 5px solid #cc57f0; /* Borde opcional alrededor de la imagen */
 }
+.hg3-section{
+    font-family: "Patrick Hand", serif;
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+/* Galería de imágenes */
+.gallery-item4 {
+    margin-top: 50px;
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.gallery-item4 h2 {
+    font-size: 2.5em;
+    color: #7fd9ff;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de la galería */
+.gallery-container4 {
+    display: grid; /* Usamos grid para las imágenes */
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+    gap: 20px; /* Espacio entre las imágenes */
+    justify-items: center; /* Centra las imágenes dentro de cada celda */
+    ;
+}
+
+/* Estilos para cada imagen dentro de la galería */
+.gallery-item4 img {
+    width: 100%; /* Las imágenes llenan el ancho de su contenedor */
+    height: 250px; /* Establecemos una altura fija para todas las imágenes */
+    object-fit: cover; /* Asegura que las imágenes cubran el área sin distorsionarse */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s ease-in-out; /* Efecto de transición al hacer hover */
+}
+
+/* Efecto de hover sobre las imágenes */
+.gallery-item4 img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen */
+    /* Estilos para la sección de imagen y texto */
+}
+
+
 .spikes {
     position: relative;
-    background: #bddde6;
+    background: white;
     height: 30px;
 }
 
@@ -562,7 +951,7 @@ body {
     display: block;
     height: 50px;
     background-size: 50px 100%;
-    background-image: linear-gradient(135deg, #bddde6 25%, transparent 25%), linear-gradient(225deg, #bddde6 25%, transparent 25%);
+    background-image: linear-gradient(135deg, white 25%, transparent 25%), linear-gradient(225deg, white 25%, transparent 25%);
     background-position: 0 0;
     background-color: #2c3e50;
 }
@@ -627,6 +1016,7 @@ iframe {
     font-size: 30px;
     font-weight: bold;
     text-decoration: underline rgb(118, 210, 203);
+    padding-bottom: 15px;
 }
 /*Iconos de las paginas web*/
 
@@ -736,11 +1126,11 @@ ul {
 
 .container2 {
     border: solid 1px #8d8d8d;
-    padding: 20px;
+    padding: 30px;
     border-radius: 20px;
     background-color: #fff;
     width: 350px;
-    height: 250px;
+    height: 300px;
 }
 
 .container .heading {
