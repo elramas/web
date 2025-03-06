@@ -563,7 +563,7 @@ span{
     flex-direction: column;
     position: relative;
     align-items: center;
-    font-size: large;
+    font-size: medium;
 }
 
 .span{
